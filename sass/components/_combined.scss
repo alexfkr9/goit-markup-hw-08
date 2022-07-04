@@ -1,0 +1,78 @@
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+body {
+    margin: 0;
+    color: $primary-text-color;
+    background-color: $primary-bg-color;
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;    
+}
+
+body.is-open { overflow-y: hidden; }
+
+.container {    
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;     
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    // tablet
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    // dekstop
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.block { display: block; }
+
+
+.section {    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }    
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* engage, team, client */
+.title {
+    text-align: center;
+    margin-top: 0px;           
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;       
+    
+    @media screen and (min-width: 1200px) {       
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;        
+    }  
+}

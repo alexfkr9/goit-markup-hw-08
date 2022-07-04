@@ -1,0 +1,19 @@
+.social {    
+    display: flex;
+    justify-content: center;
+    &__icon { margin-right: 10px; }
+    &__icon:last-child { margin-right: 0; }
+    &__link {
+        display: block;
+        fill: #afb1b8;
+        border-radius: 50%;
+        transition-property: fill, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover,
+    &__link:focus {
+        fill: $primary-bg-color;
+        background-color: $accent-color;
+    }
+}
